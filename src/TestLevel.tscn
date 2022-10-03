@@ -11,9 +11,9 @@ albedo_color = Color( 0.811765, 0.811765, 0.811765, 1 )
 [node name="Ground" type="CSGBox" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.60063, 0 )
 use_collision = true
-width = 20.0
+width = 50.0
 height = 1.0
-depth = 20.0
+depth = 50.0
 material = SubResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
