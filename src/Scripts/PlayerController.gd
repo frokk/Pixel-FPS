@@ -1,6 +1,6 @@
-extends KinematicBody;
+extends "GravityObj.gd";
 
-const MOVE_SPEED = 4
+const MOVE_SPEED = 8
 const MOUSE_SENS = 0.2
  
 onready var anim_player = $AnimationPlayer
