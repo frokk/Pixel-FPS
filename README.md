@@ -6,7 +6,7 @@ Doom Styled FPS Demo In Godot 3 (Miziziziz's Tutorial)
 ---
 ## Todo
 - [ ] Add Sounds
-- [ ] Add Gravity
+- [x] Add Gravity
 
 ---
 ## License
