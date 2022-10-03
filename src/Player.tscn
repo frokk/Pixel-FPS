@@ -25,6 +25,7 @@ tracks/0/keys = {
 
 [node name="Player" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.02559, 0 )
+collision_layer = 4
 script = ExtResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
@@ -34,6 +35,7 @@ shape = SubResource( 1 )
 [node name="RayCast" type="RayCast" parent="."]
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
+collision_mask = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/ShootAnim = SubResource( 3 )

@@ -67,6 +67,8 @@ tracks/1/keys = {
 }
 
 [node name="Enemy" type="KinematicBody"]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
