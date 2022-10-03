@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.811765, 0.811765, 0.811765, 1 )
+
+[node name="Root" type="Spatial"]
+
+[node name="Ground" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.60063, 0 )
+use_collision = true
+width = 20.0
+height = 1.0
+depth = 20.0
+material = SubResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.000697136, 6.03674 )
+
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.97342, 0.5, -7.0651 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26997, 0.5, -6.29265 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.84642, 0.5, -7.12278 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.94327, 0.5, -7.47006 )
